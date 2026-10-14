@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tf-move-witness"
+version = "0.1.0"
+description = "Trace exact managed-resource address moves across chains against a supplied state-address list, rejecting cycles, occupied intermediate/final destinations and actual fan-in collisions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Nripanka Das"}]
+dependencies = []
+
+[project.scripts]
+tf-move-witness = "tf_move_witness:main"
+
+[tool.setuptools]
+py-modules = ["tf_move_witness"]
