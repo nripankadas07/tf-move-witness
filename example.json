@@ -1,0 +1,16 @@
+{
+  "state": [
+    "aws_instance.old[0]",
+    "aws_instance.stable"
+  ],
+  "moves": [
+    {
+      "from": "aws_instance.old[0]",
+      "to": "aws_instance.middle[0]"
+    },
+    {
+      "from": "aws_instance.middle[0]",
+      "to": "module.web.aws_instance.final[0]"
+    }
+  ]
+}
